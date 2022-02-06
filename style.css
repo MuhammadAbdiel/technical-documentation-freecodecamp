@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: #444;
+    line-height: 1.4em;
+}
+
+/* *Navbar */
+
+nav {
+    border-right: 2px solid #888;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    overflow: auto;
+}
+
+nav header,
+main header {
+    font-size: 2rem;
+    color: #222;
+    padding: 1em 0.5em 0.5em 1.2em;
+}
+
+nav ul li {
+    padding: 0.7em 0.7em 0.7em 2em;
+    list-style: none;
+    border-top: 1px solid #888;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* *Main */
+#main-doc {
+    position: absolute;
+    margin-left: 23em;
+    padding: 1em;
+}
+
+#main-doc p {
+    padding: 1em 1em 0.4em 4em;
+}
+
+#main-doc ul {
+    padding: 1.4em 0 0 6em;
+}
+
+#main-doc ul li {
+    padding-bottom: 0.4em;
+}
+
+#main-doc article {
+    padding: 1em 1em 1.1em 4em;
+}
+
+#main-doc code {
+    background-color: #eee;
+    margin: 2em 1em 0.4em 4em;
+    padding: 1em;
+    border-radius: 5px;
+    color: #999;
+}
+
+
+/* *Responsive Breakpoint */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        border-right: 2px solid #888;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 35%;
+        overflow: auto;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 20em;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        border-right: 2px solid #888;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 40%;
+        overflow: auto;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 15em;
+        padding: 1em;
+    }
+}
